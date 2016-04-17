@@ -1,6 +1,6 @@
 # Site settings
 timezone: 'Asia/Shanghai'
-baseurl: /
+baseurl: /mrdulin.github.io
 safe: false
 title: Novaline的日记
 email: novaline@qq.com
