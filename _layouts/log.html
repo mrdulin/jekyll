@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+{% include head.html %}
+
+<body>
+	{% include header.html %}
+	
+	<div id="container" class="container">
+		<div class="container-inner clearfix">
+			<div class="update-log-container">
+				<h4 class="update-log-title">更新日志</h4>
+					<ol class="timeline clearfix">
+						<ul class="update-log-list">
+		    				{{ content  | strip_newlines  }}
+		    			</ul>
+					</ol>
+			</div>
+		</div>
+		
+		{% include footer.html %}
+	</div>
+	
+	{% include returnButton.html %}
+	{% include script.html %}
+
+</body>
+</html>

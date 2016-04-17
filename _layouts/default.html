@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+{% include head.html %}
+
+<body>
+	{% include header.html %}
+	
+	<div id="container" class="container">
+		<div class="container-inner clearfix">
+			<div class="article-list">
+		    	{{ content }}
+		    	{% include paginator.html %}
+			</div>
+			<!--<div class="aside">-->
+			<!--	<div>-->
+			<!--		{% include category.html %}-->
+			<!--	</div>-->
+			<!--	{% include hotPost.html %}-->
+			<!--	{% include recentUser.html %}-->
+			<!--</div>-->
+		</div>
+		
+		{% include footer.html %}
+	</div>
+	
+	{% include returnButton.html %}
+	{% include script.html %}
+
+</body>
+</html>

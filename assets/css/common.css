@@ -1,0 +1,49 @@
+.am-badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 2px 6px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: #999;
+}
+
+.am-badge.am-round {
+    border-radius: 1000px;
+}
+
+.return {
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+}
+
+.return:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.arrow {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px auto 0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.arrow-top {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+

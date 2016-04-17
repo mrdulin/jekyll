@@ -1,0 +1,8 @@
+<ul class="category-list">
+	{% for category in site.categories %}
+		<li>
+			<a class="category-name">{{category | first}}</a>
+			<span class="category-num am-badge am-round">{{ category | last | size }}</span>
+		</li>
+	{% endfor%}
+</ul>

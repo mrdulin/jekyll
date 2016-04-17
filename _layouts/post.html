@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% assign post = page %}
+
+<div class="post-container">
+    <div id="post-header">
+        <h2>
+          <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <div class="post-info clearfix">
+          <span class="post-date">{{ post.date | date_to_long_string }}</span>
+          <div class="post-tags clearfix">
+            {% for tag in post.tags %}
+              <a class="post-tag">{{tag}}</a>
+            {% endfor %}
+          </div>
+        </div>
+    </div>	
+    <div id="post-content">
+		{{ content }}
+    </div>
+</div>
+<div class="ds-thread" data-thread-key="{{post.id}}" data-title="{{post.title}}" data-url="{{post.url}}"></div>
