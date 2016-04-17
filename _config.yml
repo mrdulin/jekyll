@@ -1,6 +1,6 @@
 # Site settings
 timezone: 'Asia/Shanghai'
-baseurl: /blog
+baseurl: /
 safe: false
 title: Novaline的日记
 email: novaline@qq.com
