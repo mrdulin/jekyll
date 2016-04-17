@@ -25,4 +25,4 @@ paginate_path: "/page/:num"
 # rss settings
 name: Novaline的日记
 description: ''
-url: http://mrdulin.github.io/blog/index.html
+url: http://mrdulin.github.io/index.html
