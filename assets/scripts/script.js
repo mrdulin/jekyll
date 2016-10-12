@@ -16,7 +16,6 @@ $(function() {
 		$container = $('#container'),
 		$categoryItem = $('.category-name'),
 		$hotPostContainer = $('.ds-top-threads'),
-		$fullScreenBtn = $('#full-screen'),
 		$postTitles = $('.post-title'),
 		$pre = $('.highlight').find('pre');
 
@@ -27,51 +26,7 @@ $(function() {
 		scrollButtons: true,
 		scrollInertia: 0
 	});
-
-	$fullScreenBtn.text('开启全屏')
-	.on('click', function(e) {
-		toggleFullScreen(e.target);
-	});
-
-	function isFullScreen() {
-	    return (document.fullScreenElement && document.fullScreenElement !== null)
-	         || document.mozFullScreen
-	         || document.webkitIsFullScreen;
-	}
-
-	function requestFullScreen(element){
-	    if (element.requestFullscreen)
-	        element.requestFullscreen();
-	    else if (element.msRequestFullscreen)
-	        element.msRequestFullscreen();
-	    else if (element.mozRequestFullScreen)
-	        element.mozRequestFullScreen();
-	    else if (element.webkitRequestFullscreen)
-	        element.webkitRequestFullscreen();
-	}
-
-	function exitFullScreen(){
-	    if (document.exitFullscreen)
-	        document.exitFullscreen();
-	    else if (document.msExitFullscreen)
-	        document.msExitFullscreen();
-	    else if (document.mozCancelFullScreen)
-	        document.mozCancelFullScreen();
-	    else if (document.webkitExitFullscreen)
-	        document.webkitExitFullscreen();
-	}
-
-	function toggleFullScreen(element){
-	    if (isFullScreen()) {
-	    	exitFullScreen();
-	    	$(element).text('开启全屏');
-	    } else {
-	    	requestFullScreen(document.documentElement);
-	    	$(element).text('退出全屏');
-	    }
-	        
-	}
-
+	
 	$container.on('scroll', function(e) {
 		var that = this,
 			scrollTop = $(that).scrollTop();

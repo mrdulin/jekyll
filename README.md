@@ -1,5 +1,9 @@
 # Blog
 
+__Usage__
+
+*	`jekyll serve`启动开发服务器。
+
 __使用`Jekyll`遇到的问题：__
 
 *	在windows环境下使用jekyll进行本地开发，给文章的YAML头设置中文category和tag，点击文章标题进入文章正文，
