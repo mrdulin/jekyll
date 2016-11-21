@@ -7,4 +7,4 @@ $(function () {
         maxScale: 1,
         slideNumber: true
     });
-})
+})  
