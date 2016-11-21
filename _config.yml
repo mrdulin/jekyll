@@ -3,7 +3,7 @@
 source:      .
 ## Jekyll 写入文件的路径
 destination: ./_site
-plugins_dir:     ./_plugins
+# plugins_dir:     ./_plugins
 layouts_dir:     ./_layouts
 data_dir: ./_data
 collections: null
