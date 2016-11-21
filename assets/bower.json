@@ -1,7 +1,7 @@
 {
   "name": "assets",
   "version": "0.0.0",
-  "homepage": "https://github.com/Sspeed5cm/Blog",
+  "homepage": "https://github.com/mrdulin/Blog",
   "authors": [
     "novaline <novaline@qq.com>"
   ],
@@ -16,7 +16,8 @@
   "dependencies": {
     "normalize.css": "~3.0.3",
     "jquery": "~2.1.4",
-    "malihu-custom-scrollbar-plugin": "~3.0.9"
+    "malihu-custom-scrollbar-plugin": "~3.0.9",
+    "reveal.js": "^3.3.0"
   },
   "devDependencies": {
     "webshim": "~1.15.8"
