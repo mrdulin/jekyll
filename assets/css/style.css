@@ -383,6 +383,12 @@ a.next-page:hover,
 	line-height: 2;
 }
 
+#post-content img,
+.post-summary img{
+	width: 100%;
+	max-width: 100%;
+}
+
 #post-content ul,
 .post-summary ul {
 	list-style-type: disc;
@@ -397,6 +403,7 @@ a.next-page:hover,
 #post-content a[href]:hover{
 	text-decoration: underline;
 }
+
 
 .post-summary{
 	font-size: 14px;
